@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lena Eys — Mechanical Engineering portfolio">
+  <title>Lena Eys | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">LE<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#projects">View Work <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MECHANICAL ENGINEERING · DESIGN · RESEARCH</p>
+        <h1>Engineering ideas<br><em>into reality.</em></h1>
+        <p class="hero-text">
+          I'm Lena Eys, a Mechanical Engineering student at the University of Toronto
+          interested in hands-on design, prototyping, biomechanics, and engineering that
+          creates meaningful impact.
+        </p>
+        <div class="hero-actions">
+          <a class="button dark" href="#projects">Explore my projects <span>↓</span></a>
+          <a class="text-link" href="#contact">Let's connect →</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-grid"></div>
+        <div class="hero-card-content">
+          <span>01 / PORTFOLIO</span>
+          <strong>Design · Build · Test · Iterate</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label">ABOUT ME</div>
+      <div class="about-content">
+        <div>
+          <h2>Curious by nature.<br><em>Hands-on by choice.</em></h2>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a Mechanical Engineering student at the University of Toronto pursuing a
+            B.A.Sc. with PEY Co-op. I enjoy taking engineering problems from an initial
+            concept through CAD, prototyping, testing, troubleshooting, and refinement.
+          </p>
+          <p>
+            My experience spans neuromechanics research, product-oriented design, Arduino
+            systems, CAD, data analysis, and collaborative engineering projects. I especially
+            enjoy projects where mechanical design meets human movement or technology.
+          </p>
+          <div class="skills">
+            <span>SolidWorks · CSWA</span><span>Arduino</span><span>MATLAB</span>
+            <span>Python</span><span>3D Printing</span><span>Machining</span>
+            <span>Composites</span><span>OptiTrack</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="projects-heading">
+        <div>
+          <div class="section-label">SELECTED WORK</div>
+          <h2>Projects that show<br><em>how I engineer.</em></h2>
+        </div>
+        <p>Click a project to reveal the engineering story, tools, and outcome.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" data-project="trip">
+          <div class="project-image image-trip">
+            <div class="placeholder">
+              <span>PROJECT IMAGE</span>
+              <small>Add flip-up obstacle photo / CAD here</small>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-title">
+            <div><span>NEUROMECHANICS LAB</span><h3>Flip-Up Trip Perturbation Device</h3></div>
+            <button aria-label="Open project details">+</button>
+          </div>
+          <div class="project-details">
+            <p>Independently designed and built a prototype tripping device that can be triggered by both computer and force-plate input.</p>
+            <ul><li>Torque calculations & BOM</li><li>Arduino + circuit integration</li><li>Multimeter troubleshooting</li><li>Iterative prototyping</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="haptic">
+          <div class="project-image image-haptic">
+            <div class="placeholder"><span>PROJECT IMAGE</span><small>Add Haptic Vision photo here</small></div>
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-title">
+            <div><span>UTESCA · HAPTIC VISION</span><h3>2D Interface → 3D Model</h3></div>
+            <button aria-label="Open project details">+</button>
+          </div>
+          <div class="project-details">
+            <p>Used Python and Unity to convert 2D user interfaces into digital 3D models ready for integration with an existing robotic prototype.</p>
+            <ul><li>Python</li><li>Unity</li><li>3D representation</li><li>Client-focused engineering</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="research">
+          <div class="project-image image-research">
+            <div class="placeholder"><span>PROJECT IMAGE</span><small>Add force plate / OptiTrack photo here</small></div>
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-title">
+            <div><span>NEUROMECHANICS RESEARCH</span><h3>Footwear & Biomechanics Testing</h3></div>
+            <button aria-label="Open project details">+</button>
+          </div>
+          <div class="project-details">
+            <p>Analyzed force-plate, load-cell, oscilloscope, and OptiTrack data to characterize footwear friction and torsional/bending behavior.</p>
+            <ul><li>Data filtering & graphing</li><li>Static/dynamic friction</li><li>OptiTrack motion data</li><li>Technical reporting</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="maker">
+          <div class="project-image image-maker">
+            <div class="placeholder"><span>PROJECT IMAGE</span><small>Add SolidWorks / Arduino project photo here</small></div>
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-title">
+            <div><span>SCIENCE MAKER LAB</span><h3>CAD + Arduino Prototyping</h3></div>
+            <button aria-label="Open project details">+</button>
+          </div>
+          <div class="project-details">
+            <p>Designed an introductory Arduino coding-box housing and supported students learning SolidWorks and Arduino through hands-on projects.</p>
+            <ul><li>SolidWorks</li><li>Arduino</li><li>3D printing</li><li>Design instruction</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume">
+      <div class="resume-copy">
+        <div class="section-label">RESUME</div>
+        <h2>More detail.<br><em>One page.</em></h2>
+        <p>
+          View my experience, education, technical skills, research, and awards in a
+          recruiter-friendly format.
+        </p>
+        <div class="resume-actions">
+          <a class="button dark" href="Lena-Eys-Resume.pdf" target="_blank">Open resume ↗</a>
+          <a class="button outline" href="Lena-Eys-Resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+      <div class="resume-preview">
+        <div class="paper">
+          <div class="paper-top"><strong>Lena Eys</strong><span>MECHANICAL ENGINEERING</span></div>
+          <div class="paper-line wide"></div><div class="paper-line"></div>
+          <div class="paper-cols"><div><div class="paper-head">EDUCATION</div><div class="paper-line"></div><div class="paper-line short"></div><div class="paper-head">SKILLS</div><div class="paper-line"></div></div><div><div class="paper-head">EXPERIENCE</div><div class="paper-line"></div><div class="paper-line"></div><div class="paper-line short"></div></div></div>
+          <div class="paper-fade">Resume PDF</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-label">CONTACT</div>
+      <h2>Let's build something<br><em>worth building.</em></h2>
+      <p>I'm currently looking for engineering co-op opportunities where I can contribute to real-world design, testing, research, and prototyping.</p>
+      <div class="contact-links">
+        <a href="mailto:lena.eys@mail.utoronto.ca">lena.eys@mail.utoronto.ca ↗</a>
+        <a href="https://www.linkedin.com/in/lena-eys" target="_blank">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Lena Eys</span><span>Mechanical Engineering · Toronto, ON</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
