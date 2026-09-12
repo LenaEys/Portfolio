@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Lena Eys</title>
+<meta name="description" content="Selected mechanical, embedded, and research projects by Lena Eys.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="triangle-field" aria-hidden="true">
+  <svg class="tf-left" viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="0,220 90,40 180,220" fill="#d9ab3d" opacity="0.16"/>
+    <polygon points="60,220 150,90 230,220" fill="#9c7a63" opacity="0.14"/>
+  </svg>
+  <svg class="tf-right" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="300,240 210,60 120,240" fill="#d9ab3d" opacity="0.15"/>
+    <polygon points="300,180 230,80 160,240" fill="#5c4433" opacity="0.10"/>
+  </svg>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-mark">
+    <svg class="mark-tri" viewBox="0 0 14 14"><polygon points="7,0 14,14 0,14" fill="#b9902e"/></svg>
+    Lena Eys
+  </a>
+  <ul>
+    <li><a href="index.html" class="nav-link">Intro</a></li>
+    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+    <li><a href="resume.html" class="nav-link">Resume</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="projects-intro">
+    <div class="eyebrow-tag">
+      <svg viewBox="0 0 9 9"><polygon points="4.5,0 9,9 0,9" fill="#b9902e"/></svg>
+      Selected work
+    </div>
+    <h1>Projects</h1>
+    <p>Six projects spanning lab instrumentation, biomechanics research, assistive robotics, and personal CAD work. Click a title to read more.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card" data-project>
+      <div class="project-photo">
+        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice">
+          <polygon points="0,150 70,20 140,150" fill="#b9902e" opacity="0.5"/>
+          <polygon points="60,150 130,50 200,150" fill="#2b1d14" opacity="0.35"/>
+        </svg>
+      </div>
+      <button class="project-title-btn" aria-expanded="false">
+        Trip-Perturbation Device
+        <svg class="chev" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="project-desc">
+        <div class="project-desc-inner">
+          <p>Independently designed and built a prototype flip-up tripping barrier for trip-perturbation experiments, triggerable by either computer or forceplate input. Covered the full pipeline: bill of materials, torque calculations for the barrier's weight, Arduino coding, circuit design through breadboard integration, and iterative troubleshooting with a multimeter — completed in 75% of the allotted timeframe, at Wilfrid Laurier's Neuromechanics Lab.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-project>
+      <div class="project-photo">
+        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice">
+          <polygon points="200,150 130,30 60,150" fill="#9c7a63" opacity="0.45"/>
+          <polygon points="140,150 90,60 20,150" fill="#d9ab3d" opacity="0.4"/>
+        </svg>
+      </div>
+      <button class="project-title-btn" aria-expanded="false">
+        Footwear Biomechanics Research
+        <svg class="chev" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="project-desc">
+        <div class="project-desc-inner">
+          <p>Analyzed data from in-ground force plates, a load cell and oscilloscope setup, and an OptiTrack 3D marker system to find shoe-ground and insole-fabric coefficients of friction, and to track peak moments as footwear underwent torsion and bending. Filtered and graphed all datasets and summarized findings in a final report used to build a reference set of footwear properties for future papers.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-project>
+      <div class="project-photo">
+        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice">
+          <polygon points="0,150 100,10 200,150" fill="#2b1d14" opacity="0.3"/>
+          <polygon points="40,150 100,60 160,150" fill="#b9902e" opacity="0.55"/>
+        </svg>
+      </div>
+      <button class="project-title-btn" aria-expanded="false">
+        Haptic Vision — UTESCA
+        <svg class="chev" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="project-desc">
+        <div class="project-desc-inner">
+          <p>Contributed to UTESCA's Haptic Vision project, a robotic solution helping visually impaired users interact with digital platforms. Used Python and Unity to convert 2D user interfaces into 3D models ready for integration with existing robotic prototypes. The project went on to win the 2026 Troost ILead Difference Maker Award and a $50,000 scholarship.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-project>
+      <div class="project-photo">
+        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice">
+          <polygon points="200,0 100,150 0,0" fill="#d9ab3d" opacity="0.4"/>
+          <polygon points="160,0 100,90 40,0" fill="#5c4433" opacity="0.4"/>
+        </svg>
+      </div>
+      <button class="project-title-btn" aria-expanded="false">
+        Arduino Coding Box, WiSTEM
+        <svg class="chev" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="project-desc">
+        <div class="project-desc-inner">
+          <p>Designed the housing for an introductory Arduino coding box built to promote coding among women, presented at a Laurier WiSTEM event. Also tutored students in SolidWorks and Arduino coding — within a week, tutees completed CAD training and wrote their own stepper-motor movement patterns.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-project>
+      <div class="project-photo">
+        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice">
+          <polygon points="0,0 60,150 120,0" fill="#9c7a63" opacity="0.5"/>
+          <polygon points="90,0 150,150 200,0" fill="#b9902e" opacity="0.35"/>
+        </svg>
+      </div>
+      <button class="project-title-btn" aria-expanded="false">
+        Prosthetic Wrist, CAD
+        <svg class="chev" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="project-desc">
+        <div class="project-desc-inner">
+          <p>A personal SolidWorks project modelling a prosthetic wrist mechanism — part of a set of self-directed CAD work that also included a storage-room renovation model and a set of custom Arduino characters.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-project>
+      <div class="project-photo">
+        <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice">
+          <polygon points="0,150 100,140 50,20" fill="#2b1d14" opacity="0.25"/>
+          <polygon points="200,150 100,140 150,20" fill="#d9ab3d" opacity="0.5"/>
+        </svg>
+      </div>
+      <button class="project-title-btn" aria-expanded="false">
+        Automated Re-Centering Fan
+        <svg class="chev" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="project-desc">
+        <div class="project-desc-inner">
+          <p>A personal electronics project programming a motor that automatically re-centers itself paired with a fan that activates on its own — built to practice Arduino motor control and sensor-triggered logic outside of coursework.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>&copy; 2026 Lena Eys</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
