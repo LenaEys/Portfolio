@@ -159,7 +159,6 @@ main {
 /* ---------- intro page ---------- */
 
 .intro-hero {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 48px;
@@ -287,21 +286,9 @@ main {
 
 /* ---------- projects page ---------- */
 
-.projects-intro { position: relative; max-width: 58ch; margin-bottom: 44px; }
+.projects-intro { max-width: 58ch; margin-bottom: 44px; }
 .projects-intro h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin-bottom: 14px; }
 .projects-intro p { color: var(--brown-soft); }
-
-/* ---------- decorative watercolor splashes (intro + projects hero) ---------- */
-
-.hero-splash,
-.projects-splash {
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.hero-splash { top: -70px; right: -60px; width: 380px; height: 340px; }
-.projects-splash { top: -60px; left: -70px; width: 320px; height: 280px; }
 
 .project-grid {
   display: grid;
