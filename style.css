@@ -25,12 +25,20 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--cream);
   color: var(--brown-deep);
   font-family: "Work Sans", "Segoe UI", sans-serif;
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(1100px 750px at 6% -8%, rgba(217, 171, 61, 0.22), transparent 58%),
+    radial-gradient(900px 700px at 100% 8%, rgba(185, 144, 46, 0.16), transparent 55%),
+    radial-gradient(1000px 800px at 96% 104%, rgba(217, 171, 61, 0.20), transparent 55%),
+    radial-gradient(700px 600px at 0% 100%, rgba(156, 122, 99, 0.14), transparent 55%),
+    radial-gradient(650px 500px at 55% 45%, rgba(217, 171, 61, 0.06), transparent 60%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, .display {
@@ -45,7 +53,7 @@ a { color: inherit; }
 
 img { max-width: 100%; display: block; }
 
-/* ---------- corner triangle motif ---------- */
+/* ---------- corner triangle motif (watercolor gold clusters) ---------- */
 
 .triangle-field {
   position: fixed;
@@ -55,9 +63,11 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 
-.triangle-field svg { position: absolute; opacity: 0.9; }
-.triangle-field .tf-left { left: -60px; top: -40px; width: 260px; }
-.triangle-field .tf-right { right: -70px; bottom: -60px; width: 300px; }
+.triangle-field svg { position: absolute; }
+.triangle-field .tf-left { left: -100px; top: -90px; width: 420px; opacity: 0.95; }
+.triangle-field .tf-right { right: -120px; bottom: -100px; width: 460px; opacity: 0.95; }
+.triangle-field .tf-top-right { right: -70px; top: -60px; width: 220px; opacity: 0.85; }
+.triangle-field .tf-bottom-left { left: -70px; bottom: -70px; width: 240px; opacity: 0.85; }
 
 /* ---------- top nav / legend ---------- */
 
@@ -73,6 +83,7 @@ img { max-width: 100%; display: block; }
   background: rgba(246, 239, 226, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 rgba(185, 144, 46, 0.35);
 }
 
 .site-nav .nav-mark {
@@ -471,8 +482,12 @@ main {
 .project-detail-band {
   position: relative;
   z-index: 1;
-  background: var(--brown-deep);
+  background:
+    radial-gradient(500px 400px at 4% 6%, rgba(217, 171, 61, 0.22), transparent 60%),
+    radial-gradient(600px 460px at 98% 100%, rgba(217, 171, 61, 0.16), transparent 55%),
+    var(--brown-deep);
   padding: 40px clamp(20px, 6vw, 64px) 56px;
+  overflow: hidden;
 }
 
 .project-question {
